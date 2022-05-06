@@ -1,0 +1,80 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  @apply box-border;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.prev-slider {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.next-slider {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.curr-slider {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scroll-bar-custom {
+  @apply scrollbar-thin;
+}
+
+@keyframes move-forward {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100vh);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-height: 600px) {
+  .snapY {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+  }
+}

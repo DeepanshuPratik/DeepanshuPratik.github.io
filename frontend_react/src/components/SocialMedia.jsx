@@ -1,28 +1,22 @@
 import React from 'react'
-import {BsTwitter, BsInstagram, BsLinkedin} from 'react-icons/bs'
-function social(item){
-  if(item=="twitter"){
-    window.open("https://twitter.com/", "_blank")
-  }
-  else if(item=="linkedIn"){
-    window.open("https://twitter.com/", "_blank")
-  }
-  else if(item=="insta"){
-    window.open("https://twitter.com/", "_blank")
-  }
-}
+import {BsTwitter, BsInstagram, BsLinkedin, BsGithub} from 'react-icons/bs'
+
 const SocialMedia = () => {
   return (
     <div className='app__social'>
-        <div>
-            <BsTwitter onClick={social("twitter")}/>
+        <a href='https://twitter.com/PratikDeepanshu' target='_blank' rel='noreferrer'><div>
+            <BsTwitter />
         </div>
-        <div>
-            <BsLinkedin onClick={social("linkedIn")}/>
-        </div>
-        <div>
-            <BsInstagram onClick={social("insta")}/>
-        </div>
+        </a>
+        <a href='https://www.linkedin.com/in/deepanshupratik/' target='_blank' rel='noreferrer'><div>
+            <BsLinkedin />
+        </div></a>
+        <a href='https://www.instagram.com/deepanshu_pratik/' target='_blank' rel='noreferrer'><div>
+            <BsInstagram />
+        </div></a>
+        <a href='https://github.com/DeepanshuPratik' target='_blank' rel='noreferrer'><div>
+            <BsGithub />
+        </div></a>
     </div>
   )
 }

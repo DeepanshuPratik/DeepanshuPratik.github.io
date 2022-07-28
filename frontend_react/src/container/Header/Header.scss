@@ -121,8 +121,8 @@
     // circles with different height & width
   
     div:nth-child(1) {
-      width: 100px;
-      height: 100px;
+      width: 190px;
+      height: 190px;
 
       &:hover{
         box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.4);
@@ -142,8 +142,8 @@
     }
   
     div:nth-child(3) {
-      width: 70px;
-      height: 70px;
+      width: 90px;
+      height: 90px;
 
       &:hover{
         box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.4);
@@ -153,8 +153,8 @@
   
     @media screen and (min-width: 2000px) {
       div:nth-child(2) {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
       }
   
       div:nth-child(3) {
